@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("YOUR_COMPANY")]
 [assembly: AssemblyProduct("MyXrmToolBoxPlugin")]
-[assembly: AssemblyCopyright("Copyright (c) YOUR_NAME 2025")]
+[assembly: AssemblyCopyright("Copyright (c) YOUR_NAME 2026")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
