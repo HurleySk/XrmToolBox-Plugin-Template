@@ -93,11 +93,22 @@ cd MyXrmToolBoxPlugin
 dotnet build --configuration Release
 ```
 
-### Deploy locally
+### Testing Locally
 
-```powershell
-.\deploy.ps1 -Force
-```
+1. Build and deploy the plugin:
+   ```powershell
+   .\deploy.ps1 -Force
+   ```
+2. Open (or restart) XRM ToolBox
+3. If your plugin doesn't appear, delete the manifest cache and restart:
+   ```
+   %APPDATA%\MscrmTools\XrmToolBox\Plugins\manifest.json
+   ```
+4. Find your plugin in the tool list and open it
+5. Connect to a Dataverse environment using the connection button in the toolbar
+6. Test your plugin's functionality
+
+**Tip:** During development, use `.\deploy.ps1 -Force` to automatically close XRM ToolBox, rebuild, deploy, and relaunch in one step.
 
 Deploy script options:
 - `-SkipBuild` - Skip the build step and use existing binaries
